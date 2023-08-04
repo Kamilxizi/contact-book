@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Телефонная книжка</h1>
+    <div class="wrapper">
+      <div class="container">
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Имя" required />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Телефонный номер"
+            required
+          />
+          <!-- <input type="url" id="image" placeholder="URL фотографии" /> -->
+          <button type="submit">Добавить контакт</button>
+        </form>
+      </div>
+      <div class="container">
+        <ul class="contact-list"></ul>
+      </div>
+    </div>
+    <div class="main-modal">
+      <div class="inner-modal">
+        <div class="close">
+          <button class="btn-closer">X</button>
+        </div>
+        <input type="text" class="inp-edit" />
+        <!-- <input type="url" class="img-edit" placeholder="URL новой фотографии" /> -->
+        <button class="btn-save">Save</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
